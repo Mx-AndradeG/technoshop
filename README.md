@@ -8,3 +8,6 @@ Contreras Tovar José Axayácatl		17151237
 Guzmán Sánchez José Leonardo		  17151215
 Medina Peralta Jesús Eduardo 	 	17151223
 Muñoz Nieves Luis Fernando 	  	 17151213
+
+APARICION ESPECIAL DE 
+Andrade Macias Luis enrique 17151328
