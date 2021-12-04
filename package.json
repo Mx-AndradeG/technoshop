@@ -1,0 +1,14 @@
+{
+  "name": "node-messagebird-verify-example",
+  "main": "index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "body-parser": "^1.18.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "messagebird": "^2.1.4",
+    "qrcode": "^1.4.4",
+    "speakeasy": "^2.0.0"
+  }
+}

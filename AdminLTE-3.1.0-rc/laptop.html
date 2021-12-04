@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechnoShop | Admin-Panel</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.11.0/sweetalert2.js"></script>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white justify-content-center">
+      <!-- Left navbar links -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-12">
+            <div>
+              <h1>Panel de Administración</h1>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+
+      <!-- Right navbar links -->
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 ">
+      <!-- Brand Logo -->
+      <a href="admin.php" class="brand-link">
+        <img src="../AdminLTE-3.1.0-rc/assets/index/miniLogo.png" alt="AdminLTE Logo"
+          class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+        <span class="brand-text font-weight-light">TechnoShop</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+          </div>
+          <div class="info">
+            <a href="" class="d-block">Iamwicho_o</a>
+            <a class="d-block">Admin</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="admin.php" class="nav-link ">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Resumen
+                  <i class="right fas "></i>
+                </p>
+              </a>
+
+            </li>
+
+
+
+
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Formularios
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="cliente.php" class="nav-link">
+                    <i class="far fa-user nav-icon"></i>
+                    <p>Cliente</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="empleado.html" class="nav-link">
+                    <i class="far fa-id-card nav-icon"></i>
+                    <p>Empleado</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="laptop.html" class="nav-link active">
+                    <i class="fas fa-laptop nav-icon"></i>
+                    <p>Laptop</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="descuento.html" class="nav-link">
+                      <i class="fas fa-dollar-sign nav-icon"></i>
+                      <p>Descuento</p>
+                  </a>
+              </li>
+
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                  Tablas
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/tables/TablaCliente.php" class="nav-link">
+                    <i class="far fa-user nav-icon"></i>
+                    <p>Cliente</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/tables/TablaEmpleado.php" class="nav-link">
+                    <i class="far fa-id-card nav-icon"></i>
+                    <p>Empleado</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/tables/TablaLaptop.php" class="nav-link">
+                    <i class="fas fa-laptop nav-icon"></i>
+                    <p>Laptop</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/tables/TablaDescuento.php" class="nav-link ">
+                      <i class="fas fa-dollar-sign nav-icon"></i>
+                      <p>Descuento</p>
+                  </a>
+              </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Informes
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="chart.php" class="nav-link">
+                    <i class="fas fa-tasks nav-icon"></i>
+                    <p>Ordenes</p>
+                  </a>
+                </li>
+                
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="pages/tables/bitacora.php" class="nav-link ">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Bitácora
+                  <i class="right fas "></i>
+                </p>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a href="pages/tables/ordenes.php" class="nav-link ">
+                  <i class="nav-icon fas fa-box"></i>
+                  <p>
+                      Órdenes
+                      <i class="right fas "></i>
+                  </p>
+              </a>
+          </li>
+
+
+
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h1 class="card-title"> Laptop</h1>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          <form action="createLaptop.php" method="POST">
+            <div class="card-body">
+
+              <div class="input-group row col-auto mb-4">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-laptop"></i></span>
+                </div>
+                <input disabled type="text" class="form-control col-2" placeholder="id_Producto" name='id_Producto'>
+
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-cube"></i></span>
+                </div>
+                <input type="number" class="form-control col-2" placeholder="Cantidad" name='cantidad' id="cantidad">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-hand-holding-medical"></i></span>
+                </div>
+
+                <select class="form-control select2" type="text" placeholder="Condición" name='condicion' id="condicion">
+                  <option selected="selected">Condición</option>
+                  <option>Nuevo</option>
+                  <option>Reacondicionado</option>
+                  <option>Usado</option>
+                </select>
+                <select class="form-control select2" type="text" placeholder="Disponibilidad" name='disponibilidad' id="disponibilidad">
+                  <option selected="selected">Disponibilidad</option>
+                  <option>Si</option>
+                  <option>No</option>
+                  
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-building"></i></span>
+                </div>
+                <select class="form-control select2" type="text" placeholder="Fabricante" name='id_fabricante' id="id_fabricante">
+                  <option selected="selected">Fabricante</option>
+                  <option>Acer</option>
+                  <option>Alienware</option>
+                  <option>Apple</option>
+                  <option>Asus</option>
+                  <option>Dell</option>
+                  <option>HP</option>
+                  <option>Huawei</option>
+                  <option>Lenovo</option>
+                </select>
+
+
+
+              </div>
+              
+
+
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-barcode"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Modelo" name='modelo' id="modelo">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                </div>
+                <input type="number" class="form-control" placeholder="Precio" name='precio' id="precio">
+                
+                
+              </div>
+
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-memory"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Gráficos " name='graficos' id="graficos">
+              </div>
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-cog"></i></span>
+                </div>
+                <select class="form-control select2" type="text" placeholder="Sistema" name='id_Sistema' id="id_Sistema">
+                  <option selected="selected">Sistema Operativo</option>
+                  <option>Windows 10 Home Edition</option>
+                  <option>Windows 10 Pro </option>
+                  <option>Windows 10 Enterprise</option>
+                  <option>Windows 10 Education</option>
+                  <option>Catalina</option>
+                  <option>Sierra</option>
+                  
+                </select>
+              </div>
+              <div class="input-group row col-auto mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-memory"></i></span>
+                </div>
+
+                <select class="form-control select2" type="text" placeholder="RAM" name='ram' id="ram">
+                  <option selected="selected">RAM</option>
+                  <option>4 GB</option>
+                  <option>8 GB</option>
+                  <option>16 GB</option>
+                  <option>32 GB</option>
+                  <option>64 GB</option>
+                  
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-hdd"></i></span>
+                </div>
+
+                <select class="form-control select2" type="text" placeholder="Almacenamiento Principal" name='almacenamientoPrincipal' id="almacenamientoPrincipal">
+                  <option selected="selected">Almacenamiento Principal</option>
+                  <option>128 GB SSD</option>
+                  <option>256 GB SSD</option>
+                  <option>512 GB SSD</option>
+                  <option>1 TB SSD</option>
+                  <option>124 GB HDD</option>
+                  <option>500 GB HDD</option>
+                  <option>1 TB HDD</option>
+                  <option>124 GB M.2</option>
+                  <option>500 GB M.2</option>
+                  <option>1 TB M.2</option>
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-hdd"></i></span>
+                </div>
+
+                <select class="form-control select2" type="text" placeholder="Almacenamiento Secundario" name='almacenamientoSecundario' id="almacenamientoSecundario">
+                  <option selected="selected">Almacenamiento Secundario</option>
+                  <option>128 GB SSD</option>
+                  <option>256 GB SSD</option>
+                  <option>512 GB SSD</option>
+                  <option>1 TB SSD</option>
+                  <option>124 GB HDD </option>
+                  <option>500 GB HDD </option>
+                  <option>1 TB HDD</option>
+                  <option>124 GB M.2</option>
+                  <option>500 GB M.2</option>
+                  <option>1 TB M.2</option>
+                  <option>No aplica</option>
+                </select>
+
+                
+
+              </div>
+
+              <div class="input-group row col-auto mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-hdd"></i></span>
+                </div>
+
+                <select class="form-control select2" type="text" name='id_Familia' id="id_Familia">
+                  <option selected="selected">Familia</option>
+                  <option>Intel i9 </option>
+                  <option> Intel i7 </option>
+                  <option> Intel i5 </option>
+                  <option> Intel i3 </option>
+                  <option> Intel Celeron 4 </option>
+                  <option> Ryzen 9 </option>
+                  <option> Ryzen 7 </option>
+                  <option> Ryzen 5 </option>
+                  <option> Ryzen 3 </option>
+                  <option> A4 </option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-hdd"></i></span>
+                </div>
+
+                <input type="text" class="form-control" placeholder="Modelo Procesador" name='procesador' id="procesador">
+                
+
+              </div>
+
+
+              <div class="input-group row col-auto mb-4">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-wifi"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='wifi' id="wifi">
+                  <option selected="selected">Wi-Fi</option>
+                  <option>Si</option>
+                  <option>No</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fab fa-bluetooth-b"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='bluetooth' id="bluetooth">
+                  <option selected="selected">Bluetooth</option>
+                  <option>Si</option>
+                  <option>No</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-microphone"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='microfono' id="microfono">
+                  <option selected="selected">Microfono</option>
+                  <option>Si</option>
+                  <option>No</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-camera"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='camara' id="camara">
+                  <option selected="selected">Camara</option>
+                  <option>Si</option>
+                  <option>No</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-volume-up"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='altavoces' id="altavoces">
+                  <option selected="selected">Altavoces</option>
+                  <option>Si</option>
+                  <option>No</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-keyboard"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='teclado' id="teclado">
+                  <option selected="selected">Teclado</option>
+                  <option>Español</option>
+                  <option>Inglés</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-compact-disc"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='unidadOptica' id="unidadOptica">
+                  <option selected="selected">Unidad Óptica</option>
+                  <option>Si</option>
+                  <option>No</option>
+
+                </select>
+
+              </div>
+
+
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-plug"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Puertos" name='puertos' id="puertos">
+              </div>
+
+              <div class="input-group mb-4">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-life-ring"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='garantia' id="garantia">
+                  <option>Garantía</option>
+                  <option>1 año directo con proveedor</option>
+                  <option>No</option>
+
+                </select>
+
+              </div>
+              
+
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-battery-full"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Capacidad de Batería" name='bateria' id="bateria">
+              </div>
+
+
+              <h4> Pantalla </h4>
+              <div class="input-group row col-auto mb-4">
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-desktop"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='resolucion' id="resolucion">
+                  <option selected="selected">Resolución</option>
+                  <option>1920x1080</option>
+                  <option>1366x768</option>
+                  <option>1366x720</option>
+                  <option>3840x2160</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-expand-alt"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='tamaño' id="tamaño">
+                  <option selected="selected">Tamaño</option>
+                  <option>12"-14"</option>
+                  <option>15"-17"</option>
+                  <option>18" o más</option>
+
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text "><i class="fas fa-tachometer-alt"></i></span>
+                </div>
+                <select class="form-control select2" type="text"  name='frecuencia' id="frecuencia">
+                  <option selected="selected">Frecuencia</option>
+                  <option>60 Hz</option>
+                  <option>120 Hz</option>
+                  <option>244 Hz</option>
+
+                </select>
+
+              </div>
+
+              <h4> Imágenes </h4>
+
+              <div class="input-group row col-auto mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-image"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Imagen" name='imagen1' id="imagen1">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-image"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Imagen" name='imagen2' id="imagen2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-image"></i></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Imagen" name='imagen3' id="imagen3">
+               
+              </div>
+              <div class="card-footer row">
+                <button type="submit" class="btn btn-danger col-2">Cancelar</button>
+                <button type="submit"  id="createLaptop" name="CLaptop"  class="btn btn-success col-10">Registrar</button>
+              </div>
+          </form>
+        </div>
+
+
+
+      </div>
+
+      <!-- /.content -->
+    </div>
+
+    <footer class="main-footer">
+
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark fixed">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge("uibutton", $.ui.button);
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="dist/js/pages/dashboard.js"></script>
+  <script type="text/javascript" src="validacionL.js"></script>
+</body>
+
+</html>

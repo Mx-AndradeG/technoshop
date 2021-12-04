@@ -1,0 +1,25 @@
+{
+  "name": "almasaeed2010/adminlte",
+  "description": "Panel de Administración para TechnoShop",
+  "homepage": "https://TechnoShop.com/",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "responsive",
+    "back-end",
+    "template",
+    "theme",
+    "web",
+    "admin"
+  ],
+  "authors": [
+    {
+      "name": "Colorlib"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/ColorlibHQ/AdminLTE/issues"
+  }
+}
